@@ -26,12 +26,12 @@
     
     <!--    Include the JayCut JavaScript SDK. Like all good developers, 
             we place our JavaScript just before the closing </body> tag. -->
-    <script src="http://api.jaycut.com/assets/javascripts/sdk.0.3.1.js" type="text/javascript"></script> 
+    <script src="http://api.jaycut.com/assets/javascripts/sdk.0.4.js" type="text/javascript"></script> 
     <script type="text/javascript">
-        JC.init(
-            '<%= JayCutAuthority %>',
-            '<%= JayCutLoginUri %>'
-        );
+        JC.init({
+            'uri_authority': '<%= JayCutAuthority %>',
+            'login_uri': '<%= JayCutLoginUri %>'
+        });
     </script>
 </body>
 </html>
